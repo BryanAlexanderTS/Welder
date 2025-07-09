@@ -27,30 +27,29 @@
 <body class="bg-gray-100 text-gray-800">
 
     <!-- info -->
-    <div
-        class="bg-gradient-to-r from-blue-500 to-blue-900 text-white text-sm px-4 py-2 flex justify-between items-center">
-        <p>Wilson Patricio Tuso Tópon</p>
-        <div class="space-x-4">
-            <i class="fa-solid fa-person-circle-check"></i>
-            <i class="fa-solid fa-building"></i>
-        </div>
+<div class="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-500 to-blue-900 text-white text-sm px-4 py-2 flex justify-between items-center z-50 h-8">
+    <p>Wilson Patricio Tuso Tópon</p>
+    <div class="space-x-4">
+        <i class="fa-solid fa-person-circle-check"></i>
+        <i class="fa-solid fa-building"></i>
     </div>
+</div>
 
-    <!-- Navbar -->
-    <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-            <img src="images/LogoWTT.png" alt="Logo" class="h-10">
-            <nav>
-                <ul class="flex space-x-6 text-gray-700 font-semibold text-sm">
-                    <li><a href="#sec_Obras" class="hover:text-blue-500 transition">OBRAS <i
-                                class="bi bi-tools"></i></a></li>
-                    <li><a href="#sec_Trab" class="hover:text-blue-500 transition">MI TRABAJO <i
-                                class="fa-solid fa-helmet-safety"></i></a></li>
-                    <li><a href="#sec-cotiza" class="hover:text-blue-500 transition">COTIZACIONES</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<!-- Navbar -->
+<header class="fixed top-8 left-0 w-full bg-white shadow-md z-50 h-16">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4 h-full">
+        <img src="images/LogoWTT.png" alt="Logo" class="h-10">
+        <nav>
+            <ul class="flex space-x-6 text-gray-700 font-semibold text-sm">
+                <li><a href="#sec_Obras" class="hover:text-blue-500 transition">OBRAS <i class="bi bi-tools"></i></a></li>
+                <li><a href="#sec_Trab" class="hover:text-blue-500 transition">MI TRABAJO <i class="fa-solid fa-helmet-safety"></i></a></li>
+                <li><a href="#sec-cotiza" class="hover:text-blue-500 transition">COTIZACIONES</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="pt-24">
 
     <!-- section bienvenida -->
     <section class="relative bg-cover bg-center text-white h-[80vh] flex items-center justify-center"
@@ -240,6 +239,8 @@
 
   </div>
 </footer>
+
+</main>
 
 <script>
     ScrollReveal().reveal('[data-sr]', {
