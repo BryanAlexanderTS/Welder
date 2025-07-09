@@ -1,232 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/80d847e7a8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/style.css" type="text/css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Soldadura ~W~</title>
+
 </head>
-<body>
-    <div class="navini">
-        <div class="ini1">
-            <p> Wilson Patricio Tuso Tópon </p>
-        </div> 
-        <div class="ini2">
-            <i class="fa-solid fa-person-circle-check"></i>&nbsp;
+  <script>
+    ScrollReveal().reveal('.navnav', {
+      duration: 2000,
+      origin: 'top',
+      distance: '50px'
+    });
+    ScrollReveal().reveal('.welcome', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '50px'
+    });
+  </script>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- info -->
+    <div
+        class="bg-gradient-to-r from-blue-500 to-blue-900 text-white text-sm px-4 py-2 flex justify-between items-center">
+        <p>Wilson Patricio Tuso Tópon</p>
+        <div class="space-x-4">
+            <i class="fa-solid fa-person-circle-check"></i>
             <i class="fa-solid fa-building"></i>
         </div>
     </div>
-    <div class="navnav">
-        <div class="nav1">
-            <img src="images/LogoWTT.png" id="imageLogo" alt="">
-        </div>
-        <div class="nav2">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+            <img src="images/LogoWTT.png" alt="Logo" class="h-10">
             <nav>
-                <ul>
-                    <li><a href="#sec_Obras">OBRAS <i class="bi bi-tools"></i></a></li>
-                    <li><a href="#sec_Trab">MI TRABAJO <i class="fa-solid fa-helmet-safety"></i></a></li>
-                    <li><a href="#sec-cotiza">COTIZACIONES </a></li>
+                <ul class="flex space-x-6 text-gray-700 font-semibold text-sm">
+                    <li><a href="#sec_Obras" class="hover:text-blue-500 transition">OBRAS <i
+                                class="bi bi-tools"></i></a></li>
+                    <li><a href="#sec_Trab" class="hover:text-blue-500 transition">MI TRABAJO <i
+                                class="fa-solid fa-helmet-safety"></i></a></li>
+                    <li><a href="#sec-cotiza" class="hover:text-blue-500 transition">COTIZACIONES</a></li>
                 </ul>
             </nav>
         </div>
-    </div>
-    <div class="sec1">
-        <div class="welcome">
-            <h1> Bienvenidos</h1>
-            <h3> Más que un trabajo, ser Soldador es un estilo de vida</h3>
-        </div>
-        <div class="slider" id="sec_Obras">
-            <div class="proj">
-                <div class="card" >
-                    <img src="images/im1.jpeg" class="card-img-top" id="imageBody" alt="">
-                  </div>
-                <div class="card-textP">
-                    <br><br>
-                    <h1> Urban Plaza </h1>
-                    <p> Su construcción se utilizo materiales de alta calidad y suelda avanzada,
-                        supervisada por expertos en ingeniería estructural. Asegurando la seguridad y la belleza del resultado final. 
-                    </p>
-                  </div>
-            </div>
-        </div><br>
-        <div class="slider" id="sec_Obras">
-            <div class="proj">
-                <div class="card-textH">
-                    <br><br>
-                    <h1> Hospital Axiss </h1>
-                        <p>
-                        El Hospital Axiss tuvo un proceso meticuloso y centrado en la innovación 
-                        en infraestructura hospitalaria. Se priorizó la funcionalidad y la adaptabilidad a las necesidades médicas avanzadas.
-                        </p>
-                  </div>
-                <div class="card" >
-                    <img src="images/im2.jpg" class="card-img-top" id="imageBody" alt="">
-                  </div>
-            </div>
-        </div>
-        <br>
-    </div>
-    
-    <section class="sec-two">
-        <div class="title-two">
-            <a href="">Descubre Nuestras Fortalezas en Soldadura</a>
-            <br><br>
-            <p>
-                Nos destacamos por ofrecer servicios de soldadura de la más alta calidad. 
-                Nuestro compromiso con la excelencia se refleja en cada proyecto que emprendemos.
-            </p>
+    </header>
+
+    <!-- section bienvenida -->
+    <section class="relative bg-cover bg-center text-white h-[80vh] flex items-center justify-center"
+        style="background-image: url('images/fondo.jpg');">
+        <div class="bg-black bg-opacity-60 p-8 rounded-lg text-center">
+            <h1 class="text-4xl font-bold mb-4">Bienvenidos</h1>
+            <h3 class="text-lg font-light">Más que un trabajo, ser Soldador es un estilo de vida</h3>
         </div>
     </section>
-    <section class="sec-three" id="sec_Trab">
-        <div class="details-one" id="d-one">
-            <h3>Soldadura por Resistencia</h3>
-            <p>
-                Nuestra división de Soldadura por Resistencia es líder en el mercado en la fabricación 
-                de consumibles y equipos para soldadura por puntos.
-            </p>
-        </div>
-        <div class="details-one" id="d-two">
-            <h3>Soldadura por Calificación</h3>
-            <p>
-                Cumplo con las exigencias más rigurosas de los sectores industriales en el país, ejecutadas 
-                por manos expertas y utilizando técnicas avanzadas con su cuidado y atención a detalle.
-            </p>
-        </div>
-        <div class="details-one" id="d-three">
-            <h3>Soldadura Mic</h3>
-            <p>
-                He realizado trabajos especializados utilizando soldadura MIC, garantiza la integridad 
-                y durabilidad de las piezas, cumpliendo los más altos estándares de calidad y seguridad.
-            </p>
-        </div>
-    </section>
-    <br>
-    <section class="sec-four" id="sec_Trab">
-        <div class="container">
-            <div class="item">
-                <div class="img-item">
-                    <img class="img-check" src="images/check-circle.svg" alt="">
-                </div>
-                <div class="description">
-                    <a href="">DUCTOS INDUSTRIALES</a>
-                    <br><br>
-                    <p>
-                        Ofrecemos ingeniería de fabricación de chapa metálica de alta calidad, 
-                        donde cada proyecto se centra en un plan detallado.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-item">
-                    <img class="img-check" src="images/check-circle.svg" alt="">
-                </div>
-                <div class="description">
-                    <a href="">EDIFICIOS DE ACERO ESTRUCTURALES</a>
-                    <br><br>
-                    <p>
-                        Ofrecemos a nuestros clientes los mejores edificios preingenierizados 
-                        de acero estructural, los cuales son muy ventajosos.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-item">
-                    <img class="img-check" src="images/check-circle.svg" alt="">
-                </div>
-                <div class="description">
-                    <a href="">PLATAFORMAS, ESCALERAS</a>
-                    <br><br>
-                    <p>
-                        Las escaleras y plataformas de acero que producimos son de alta 
-                        calidad y servirán durante mucho tiempo.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-item">
-                    <img class="img-check" src="images/check-circle.svg" alt="">
-                </div>
-                <div class="description">
-                    <a href="">GALPONES ESTRUCTURALES</a>
-                    <br><br>
-                    <p>
-                        Diseñados con materiales alta calidad en construcción avanzada, un 
-                        trabajo 100% garantizando y seguro.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-item">
-                    <img class="img-check" src="images/check-circle.svg" alt="">
-                </div>
-                <div class="description">
-                    <a href="">100% GARANTIA</a>
-                    <br><br>
-                    <p>
-                        Trabajó con calificaciones 100% garantizadas en suelda estructural.
-                        Ofrezco garantia total de mi trabajó y sus diferentes construcciones. 
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-item">
-                    <img class="img-check" src="images/check-circle.svg" alt="">
-                </div>
-                <div class="description">
-                    <a href="">PRECIOS MODICOS</a>
-                    <br><br>
-                    <p>
-                        Ofrecemos precios modicos para todo tipo de construccion estructural.
-                        Sujetos a ofertas que nos permiten evaluarte los precios más economicos.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="contacts" id="sec-cotiza">
-        <div class="body-weld">
-            <h2> C O N T A C T A N O S </h2>
-            <div class="contacto-weld">
-                
-                <div class="infoGroup">
-                    <h4> Número Celular </h4>
-                    <hr>
-                    <a href="https://wa.me/593995055415" class="num"> <i class="bi bi-whatsapp"></i> +593 995055415 </a>
-                </div>
-                <div class="infoGroup">
-                    <h4> Ciudad, Pais </h4>
-                    <hr>
-                    <a href="" class="num"><i class="fa-solid fa-map-location-dot"></i> Quito - Ecuador </a>
-                </div>
-                <hr>
-            </div>
-        </div>
+
+    <!-- section Obras -->
+<section id="sec_Obras" class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4 space-y-16">
+
+    <!-- part 1 -->
+    <div class="grid md:grid-cols-2 gap-8 items-center bg-white shadow-lg rounded-lg p-6" data-sr>
+      <img src="images/im1.jpeg" alt="Urban Plaza" class="w-full h-72 object-cover rounded-md">
+      <div>
+        <h2 class="text-2xl font-bold text-blue-900 mb-3">Urban Plaza</h2>
+        <p class="text-gray-700">
+          Su construcción se utilizó materiales de alta calidad y soldadura avanzada,
+          supervisada por expertos en ingeniería estructural. Asegurando la seguridad y la belleza del resultado final.
+        </p>
+      </div>
     </div>
-    <br>
-    <footer class="footer">
-        <hr>
-        <div class="items-footer">
-            <div class="item-fot-1">
-                <p>
-                    2024 © Desarrollado por Bryan Tuso
-                </p>
-            </div>
-            <div class="item-fot-2">
-                <a href="" class="icon-fot">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                &nbsp;
-                <a href="https://wa.me/593960951039" class="icon-fot">
-                    <i class="bi bi-whatsapp"></i>
-                </a>
-            </div>
+
+    <!-- part 2 -->
+    <div class="grid md:grid-cols-2 gap-8 items-center bg-white shadow-lg rounded-lg p-6 md:flex-row-reverse" data-sr>
+      <img src="images/im2.jpg" alt="Hospital Axiss" class="w-full h-72 object-cover rounded-md">
+      <div>
+        <h2 class="text-2xl font-bold text-blue-900 mb-3">Hospital Axiss</h2>
+        <p class="text-gray-700">
+          El Hospital Axiss tuvo un proceso meticuloso y centrado en la innovación
+          en infraestructura hospitalaria. Se priorizó la funcionalidad y la adaptabilidad a las necesidades médicas avanzadas.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Sección MI TRABAJO -->
+<section id="sec_Trab" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-blue-900 mb-10">Tipos de Soldadura</h2>
+    <div class="grid md:grid-cols-3 gap-6" data-sr>
+      
+      <!-- Soldadura por Resistencia -->
+      <div class="bg-gradient-to-r from-blue-500 to-blue-900 text-white rounded-lg shadow-lg p-6">
+        <h3 class="text-xl font-semibold mb-3">Soldadura por Resistencia</h3>
+        <p class="text-sm">
+          Nuestra división es líder en la fabricación de consumibles y equipos para soldadura por puntos.
+        </p>
+      </div>
+
+      <!-- Soldadura por Calificación -->
+      <div class="bg-gradient-to-r from-blue-500 to-blue-900 text-white rounded-lg shadow-lg p-6">
+        <h3 class="text-xl font-semibold mb-3">Soldadura por Calificación</h3>
+        <p class="text-sm">
+          Cumplo con las exigencias más rigurosas de los sectores industriales, con técnicas avanzadas y cuidado al detalle.
+        </p>
+      </div>
+
+      <!-- Soldadura MIC -->
+      <div class="bg-gradient-to-r from-blue-500 to-blue-900 text-white rounded-lg shadow-lg p-6">
+        <h3 class="text-xl font-semibold mb-3">Soldadura MIC</h3>
+        <p class="text-sm">
+          Garantiza la integridad y durabilidad de las piezas, cumpliendo los más altos estándares de calidad.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Fortalezas -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12">Fortalezas de Nuestro Servicio</h2>
+
+    <div class="grid md:grid-cols-3 gap-10" data-sr>
+
+      <!-- Ductos -->
+      <div class="flex items-start space-x-4 bg-white p-5 rounded-lg shadow-md">
+        <img src="images/check-circle.svg" alt="" class="w-10 h-10">
+        <div class="text-left">
+          <h4 class="text-lg font-semibold text-gray-800">Ductos Industriales</h4>
+          <p class="text-sm text-gray-600">Fabricación de chapa metálica con ingeniería detallada y materiales de alta calidad.</p>
         </div>
-    </footer>
-    <script src="assets/index.js"></script>
+      </div>
+
+      <!-- Edificios -->
+      <div class="flex items-start space-x-4 bg-white p-5 rounded-lg shadow-md">
+        <img src="images/check-circle.svg" alt="" class="w-10 h-10">
+        <div class="text-left">
+          <h4 class="text-lg font-semibold text-gray-800">Edificios Estructurales</h4>
+          <p class="text-sm text-gray-600">Ofrecemos estructuras de acero pre-ingenierizadas con gran ventaja y durabilidad.</p>
+        </div>
+      </div>
+
+      <!-- Escaleras -->
+      <div class="flex items-start space-x-4 bg-white p-5 rounded-lg shadow-md">
+        <img src="images/check-circle.svg" alt="" class="w-10 h-10">
+        <div class="text-left">
+          <h4 class="text-lg font-semibold text-gray-800">Plataformas y Escaleras</h4>
+          <p class="text-sm text-gray-600">Diseños duraderos y seguros para todo tipo de proyecto estructural.</p>
+        </div>
+      </div>
+
+      <!-- Galpones -->
+      <div class="flex items-start space-x-4 bg-white p-5 rounded-lg shadow-md">
+        <img src="images/check-circle.svg" alt="" class="w-10 h-10">
+        <div class="text-left">
+          <h4 class="text-lg font-semibold text-gray-800">Galpones</h4>
+          <p class="text-sm text-gray-600">Materiales de alta calidad para construcciones garantizadas y resistentes.</p>
+        </div>
+      </div>
+
+      <!-- Garantía -->
+      <div class="flex items-start space-x-4 bg-white p-5 rounded-lg shadow-md">
+        <img src="images/check-circle.svg" alt="" class="w-10 h-10">
+        <div class="text-left">
+          <h4 class="text-lg font-semibold text-gray-800">100% Garantía</h4>
+          <p class="text-sm text-gray-600">Trabajo calificado y garantía completa en todas las construcciones realizadas.</p>
+        </div>
+      </div>
+
+      <!-- Precios -->
+      <div class="flex items-start space-x-4 bg-white p-5 rounded-lg shadow-md">
+        <img src="images/check-circle.svg" alt="" class="w-10 h-10">
+        <div class="text-left">
+          <h4 class="text-lg font-semibold text-gray-800">Precios Módicos</h4>
+          <p class="text-sm text-gray-600">Ofertas accesibles sin comprometer la calidad ni la seguridad del proyecto.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="sec-cotiza" class="py-20 bg-white">
+  <div class="max-w-xl mx-auto px-4 text-center" data-sr>
+    <h2 class="text-3xl font-bold text-blue-900 mb-10">C O N T Á C T A N O S</h2>
+
+    <div class="space-y-8">
+
+      <!-- WhatsApp -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-semibold text-gray-800 mb-2">Número Celular</h4>
+        <hr class="mb-3 border-gray-300">
+        <a href="https://wa.me/593995055415" target="_blank" class="inline-flex items-center text-green-600 font-medium text-lg hover:underline">
+          <i class="bi bi-whatsapp text-2xl mr-2"></i> +593 995 055 415
+        </a>
+      </div>
+
+      <!-- Ciudad -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-semibold text-gray-800 mb-2">Ciudad, País</h4>
+        <hr class="mb-3 border-gray-300">
+        <p class="text-gray-700 flex justify-center items-center gap-2">
+          <i class="fa-solid fa-map-location-dot text-blue-700 text-lg"></i> Quito - Ecuador
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-6">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+
+    <!-- Créditos -->
+    <p class="text-sm">&copy; 2024 Desarrollado por <span class="font-semibold">Bryan Tuso</span></p>
+
+    <!-- Redes Sociales -->
+    <div class="flex space-x-4">
+      <a href="#" class="text-white text-lg hover:text-blue-300">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://wa.me/593960951039" class="text-white text-lg hover:text-green-400">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+    ScrollReveal().reveal('[data-sr]', {
+        duration: 1500,
+        distance: '40px',
+        origin: 'bottom',
+        interval: 200
+    });
+</script>
+
 </body>
+
 </html>
