@@ -251,7 +251,7 @@
         <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
           <h3 class="text-2xl font-semibold text-blue-900 mb-6 text-center md:text-left">Envíanos tu requerimiento</h3>
           <form id="whatsappForm" class="space-y-4">
-            <div class="flex gap-4">
+            <div class="flex flex-col md:flex-row gap-4">
               <input type="text" id="nombre" placeholder="Nombre"
                 class="flex-1 p-3 rounded border border-gray-300 focus:outline-none" required>
               <input type="text" id="apellido" placeholder="Apellido"
@@ -266,7 +266,6 @@
               <i class="bi bi-chat-dots-fill text-lg"></i>
               Enviar Mensaje
             </button>
-
           </form>
         </div>
 
@@ -299,27 +298,27 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  
+
   <script>
     // funcionalidad para mandar mis mensajes 
 
     document.getElementById('whatsappForm').addEventListener('submit', function (e) {
-  e.preventDefault(); 
+      e.preventDefault();
 
-  
-  const nombre = document.getElementById('nombre').value.trim();
-  const apellido = document.getElementById('apellido').value.trim();
-  const celular = document.getElementById('celular').value.trim();
-  const mensaje = document.getElementById('mensaje').value.trim();
 
-  const texto = `Hola, soy ${nombre} ${apellido}.\nMi número es: ${celular}.\n ${mensaje}`;
+      const nombre = document.getElementById('nombre').value.trim();
+      const apellido = document.getElementById('apellido').value.trim();
+      const celular = document.getElementById('celular').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
 
-  const numero = '593995055415';
+      const texto = `Hola, soy ${nombre} ${apellido}.\nMi número es: ${celular}.\n ${mensaje}`;
 
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+      const numero = '593995055415';
 
-  window.open(url, '_blank');
-});
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+      window.open(url, '_blank');
+    });
 
   </script>
 
